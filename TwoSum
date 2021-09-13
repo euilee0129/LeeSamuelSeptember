@@ -1,1 +1,30 @@
+#include <iostream>
+#include <vector>
+using namespace std;
 
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        //int count1 = 0;
+        //int count2 = 0;
+        vector<int> num2;
+        for(int i =0; i<nums.size(); i++ ){
+            for(int j =i+1; j <nums.size(); j++){
+                int temp =0;
+                temp += nums.at(i);
+                temp += nums.at(j);
+                if(temp == target)
+                {
+                    num2.push_back(i);
+                    num2.push_back(j);
+                    //cout << "[" <<  i <<","<< j << "]" << endl;
+                    
+                    
+                }
+            }//for j
+                
+            }//for i
+        return num2;
+        }
+    };
