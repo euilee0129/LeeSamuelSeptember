@@ -16,3 +16,4 @@ class Solution {
         return false;
     }
 }
+//n/10 gives left number n%10 gives right recursion? probably
